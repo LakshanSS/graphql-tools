@@ -32,4 +32,4 @@ jobs:
         if:  github.event_name == 'pull_request'
         uses: codecov/codecov-action@v1
         with:
-          token: ${{ secrets.CODECOV_TOKEN }} # not required for public repos
+          token: ${{ secrets.CODECOV_TOKEN }} # need to remove before sending PR to upstream
